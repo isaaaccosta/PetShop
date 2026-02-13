@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Pet Vida • Pet Shop & Veterinária</title>
+  <meta name="description" content="Pet shop e clínica veterinária. Banho e tosa, consultas, vacinas e muito carinho. Agende pelo WhatsApp." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Top Bar -->
+  <header class="topbar">
+    <div class="container topbar__inner">
+      <a class="brand" href="#home" aria-label="Ir para o início">
+        <span class="brand__dot"></span>
+        <span class="brand__name">Pet Vida</span>
+      </a>
+
+      <nav class="nav" id="nav">
+        <a href="#servicos">Serviços</a>
+        <a href="#precos">Preços</a>
+        <a href="#galeria">Galeria</a>
+        <a href="#avaliacoes">Avaliações</a>
+        <a href="#contato">Contato</a>
+        <a class="nav__cta" id="navCta" href="#">Agendar</a>
+      </nav>
+
+      <button class="menuBtn" id="menuBtn" aria-label="Abrir menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- WhatsApp Floating -->
+  <a class="waFloat" id="waFloat" href="#" aria-label="Chamar no WhatsApp">
+    <span class="waFloat__icon">✆</span>
+    <span class="waFloat__text">WhatsApp</span>
+  </a>
+
+  <!-- Hero -->
+  <main id="home" class="hero">
+    <div class="container hero__inner">
+      <div class="hero__copy">
+        <span class="pill">🐾 Atendimento com carinho • Seg–Sáb</span>
+        <h1>Pet shop & veterinária<br/></h1>
+        <p>
+          Banho e tosa, consultas, vacinas e cuidados completos para o seu pet.
+          Atendimento rápido e com horário marcado.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" id="heroCta" href="#">Agendar no WhatsApp</a>
+          <a class="btn btn--ghost" href="#servicos">Ver serviços</a>
+        </div>
+
+        <div class="hero__badges">
+          <div class="badge">
+            <div class="badge__title">⏱️ Rápido</div>
+            <div class="badge__desc">Agende em 1 minuto</div>
+          </div>
+          <div class="badge">
+            <div class="badge__title">🧼 Higiene</div>
+            <div class="badge__desc">Protocolos de limpeza</div>
+          </div>
+          <div class="badge">
+            <div class="badge__title">💚 Natureza</div>
+            <div class="badge__desc">Ambiente calmo</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero__card">
+        <div class="card">
+          <div class="card__top">
+            <div class="card__title">Horário</div>
+            <div class="card__tag">Aberto hoje</div>
+          </div>
+          <div class="card__line"><b>Seg–Sáb</b> 09:00–18:00</div>
+          <div class="card__line"><b>Dom</b> fechado</div>
+          <div class="card__sep"></div>
+          <div class="card__title">Endereço</div>
+          <div class="card__line">Rua Exemplo, 123 • Centro</div>
+          <a class="card__link" id="mapsLink" href="#" target="_blank" rel="noopener">Ver no Google Maps →</a>
+          <div class="card__sep"></div>
+          <div class="card__title">Contato</div>
+          <div class="card__line">(54) 99999-9999</div>
+          <div class="card__hint">Clique em “Agendar” e mande a mensagem pronta.</div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Services -->
+  <section id="servicos" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Serviços</h2>
+        <p>Escolha o que você precisa (se houver alguma dúvida, te orientamos no WhatsApp)</p>
+      </div>
+
+      <div class="grid3">
+        <article class="service">
+          <div class="service__icon">🩺</div>
+          <h3>Consulta veterinária</h3>
+          <p>Avaliação completa, orientações e acompanhamento.</p>
+          <button class="chip" data-service="Consulta veterinária">Agendar</button>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">💉</div>
+          <h3>Vacinas</h3>
+          <p>Carteirinha em dia com segurança e cuidado.</p>
+          <button class="chip" data-service="Vacinas">Agendar</button>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">🧼</div>
+          <h3>Banho & Tosa</h3>
+          <p>Produtos de qualidade e finalização caprichada.</p>
+          <button class="chip" data-service="Banho e tosa">Agendar</button>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">✂️</div>
+          <h3>Tosa higiênica</h3>
+          <p>Ideal para conforto e limpeza no dia a dia.</p>
+          <button class="chip" data-service="Tosa higiênica">Agendar</button>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">🦷</div>
+          <h3>Orientação odontológica</h3>
+          <p>Dicas e avaliação básica para a saúde bucal.</p>
+          <button class="chip" data-service="Orientação odontológica">Agendar</button>
+        </article>
+
+        <article class="service">
+          <div class="service__icon">🏷️</div>
+          <h3>Loja e acessórios</h3>
+          <p>Rações, brinquedos e itens essenciais.</p>
+          <button class="chip" data-service="Loja e acessórios">Chamar</button>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="precos" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Preços (exemplos)</h2>
+        <p>Valores podem variar por porte/raça. Confirme no WhatsApp.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="priceCard">
+          <div class="priceCard__top">
+            <h3>Consulta</h3>
+            <div class="price">R$ 80</div>
+          </div>
+          <ul>
+            <li>Avaliação</li>
+            <li>Orientações</li>
+            <li>Plano de cuidados</li>
+          </ul>
+          <button class="btn btn--primary" data-service="Consulta veterinária">Agendar</button>
+        </div>
+
+        <div class="priceCard priceCard--featured">
+          <div class="priceCard__top">
+            <h3>Banho + Tosa</h3>
+            <div class="price">R$ 60+</div>
+          </div>
+          <ul>
+            <li>Banho completo</li>
+            <li>Tosa (raça/pedido)</li>
+            <li>Perfume leve</li>
+          </ul>
+          <button class="btn btn--primary" data-service="Banho e tosa">Agendar</button>
+        </div>
+
+        <div class="priceCard">
+          <div class="priceCard__top">
+            <h3>Vacina</h3>
+            <div class="price">R$ 60</div>
+          </div>
+          <ul>
+            <li>Aplicação segura</li>
+            <li>Orientação</li>
+            <li>Registro</li>
+          </ul>
+          <button class="btn btn--primary" data-service="Vacinas">Agendar</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="galeria" class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Galeria</h2>
+        <p>Fotos do nosso ambiente.</p>
+      </div>
+
+      <div class="gallery">
+        <div class="ph">Foto 1</div>
+        <div class="ph">Foto 2</div>
+        <div class="ph">Foto 3</div>
+        <div class="ph">Foto 4</div>
+        <div class="ph">Foto 5</div>
+        <div class="ph">Foto 6</div>
+      </div>
+      
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="avaliacoes" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Avaliações</h2>
+        <p>Avaliações de nossos clientes.</p>
+      </div>
+
+      <div class="grid3">
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p>“Atendimento excelente, meu cachorro ficou tranquilo e lindo!”</p>
+          <div class="review__by">— Marina S.</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p>“Consulta rápida e bem explicada. Recomendo muito.”</p>
+          <div class="review__by">— João P.</div>
+        </div>
+        <div class="review">
+          <div class="review__stars">★★★★★</div>
+          <p>“Banho e tosa impecável, ambiente limpo e calmo.”</p>
+          <div class="review__by">— Camila R.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <div class="section__head">
+        <h2>Dúvidas rápidas</h2>
+      </div>
+
+      <div class="faq">
+        <button class="faq__q" data-faq>
+          Preciso agendar?
+          <span>+</span>
+        </button>
+        <div class="faq__a">
+          Sim, trabalhamos com horário marcado para evitar espera e estresse do pet.
+        </div>
+
+        <button class="faq__q" data-faq>
+          Quanto tempo demora o banho e tosa?
+          <span>+</span>
+        </button>
+        <div class="faq__a">
+          Em média 1–2 horas, dependendo do porte e do tipo de tosa.
+        </div>
+
+        <button class="faq__q" data-faq>
+          Aceita cartão e Pix?
+          <span>+</span>
+        </button>
+        <div class="faq__a">
+          Sim. Pix, débito e crédito (consulte parcelamento).
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contato" class="section section--alt">
+    <div class="container">
+      <div class="section__head">
+        <h2>Contato</h2>
+        <p>Envie uma mensagem pronta no WhatsApp.</p>
+      </div>
+
+      <div class="contact">
+        <div class="card">
+          <h3 style="margin-top:0">Mande sua solicitação</h3>
+          <form id="contactForm">
+            <div class="grid grid2">
+              <div>
+                <label>Seu nome</label>
+                <input id="fName" required placeholder="Ex: Isaac" />
+              </div>
+              <div>
+                <label>Nome do pet</label>
+                <input id="fPet" required placeholder="Ex: Rex" />
+              </div>
+            </div>
+
+            <div class="grid" style="margin-top:12px;">
+              <div>
+                <label>Serviço</label>
+                <select id="fService">
+                  <option>Consulta veterinária</option>
+                  <option>Vacinas</option>
+                  <option>Banho e tosa</option>
+                  <option>Tosa higiênica</option>
+                  <option>Loja e acessórios</option>
+                </select>
+              </div>
+
+              <div>
+                <label>Preferência de data/horário</label>
+                <input id="fWhen" placeholder="Ex: Sábado 10h" />
+              </div>
+
+              <div>
+                <label>Mensagem (opcional)</label>
+                <textarea id="fMsg" rows="3" placeholder="Ex: Ele está com coceira..."></textarea>
+              </div>
+
+              <button class="btn btn--primary" type="submit">Enviar no WhatsApp</button>
+            </div>
+          </form>
+        </div>
+
+        <div class="card">
+          <h3 style="margin-top:0">Localização</h3>
+          <p class="smallText">Rua Exemplo, 123 • Centro</p>
+          <a class="btn btn--ghost" id="mapsBtn" href="#" target="_blank" rel="noopener">Abrir no Maps</a>
+
+          <div class="card__sep"></div>
+          <h3 style="margin-top:0">Horários</h3>
+          <p class="smallText"><b>Seg–Sáb:</b> 09:00–18:00<br><b>Dom:</b> fechado</p>
+
+          <div class="card__sep"></div>
+          <h3 style="margin-top:0">WhatsApp</h3>
+          <p class="smallText">(54) 99999-9999</p>
+          <a class="btn btn--primary" id="contactCta" href="#">Chamar agora</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div>
+        <b>Pet Vida</b> • Pet shop & veterinária
+        <div class="smallText">© <span id="year"></span></div>
+      </div>
+      <div class="footer__links">
+        <a href="#home">Topo</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
